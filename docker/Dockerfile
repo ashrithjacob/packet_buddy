@@ -47,7 +47,6 @@ COPY /packet_buddy /packet_buddy/
 COPY /scripts /scripts/
 
 RUN echo "==> Convert script..." \
-  && dos2unix /scripts/startup.sh\
-  && dos2unix /scripts/start.sh
+  && dos2unix /scripts/startup.sh
 
 CMD ["/bin/bash", "/scripts/startup.sh"]
