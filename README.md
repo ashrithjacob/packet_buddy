@@ -5,8 +5,14 @@ pcap analysis provided by Ollama and the open source model of your choice!
 
 Clone the repo
 
+# Create environment file
+Add the following to a .env file in the root of the project
+```
+OPENAI_API_KEY=your_openai_api_key
+```
+
 ## Bring up the server
-docker-compose up 
+docker-compose up --build
 
 ## Visit Ollama and download your model(s)
 http://localhost:3002
